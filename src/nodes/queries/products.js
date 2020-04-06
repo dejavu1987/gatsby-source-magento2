@@ -1,12 +1,7 @@
 const allProductsQuery = `
 query {
   products (
-    filter:{
-      sku: {
-        like:"%"
-      }
-    }
-    pageSize: 10000
+    search: "", pageSize: 10000
   ) {
     items {
       id
